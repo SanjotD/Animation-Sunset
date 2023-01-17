@@ -11,9 +11,10 @@ let cloudImgX2 = 180;
 
 //Circle Variable
 let circleX = 350;
-let circleYellow = 0;
 let circleSize = 25;
+let circleYellow = 0;
 let circleRed = 225;
+
 let animate = true;
 
 let frameCount = 0;
@@ -22,14 +23,13 @@ requestAnimationFrame(loop);
 function loop() {
 
     frameCount++;
-    console.log(frameCount)
 
     if (animate){
 
         if(circleSize <= 60){
         //Circle
         circleSize += .25;
-    }
+        }
     circleYellow +=5;
     circleX -= 3;
 
